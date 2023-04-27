@@ -1,0 +1,9 @@
+public class RetrieveContacts {
+    
+    public List<Contact> contactList{get;set;}
+    public RetrieveContacts(){
+        contactList = [Select Id, firstName, lastName, Phone FROM Contact
+                      WHERE firstName!=null and lastName!=null and Phone!=null limit 10];
+        
+    }
+}
