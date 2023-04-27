@@ -1,0 +1,9 @@
+<apex:page controller="RetrieveContacts">
+    <apex:pageBlock title=" Number of Contacts">
+        <apex:pageBlockTable value="{!contactList}" var="conObj">
+            <apex:column value="{!conObj.firstName}"/>
+            <apex:column value="{!conObj.LastName}"/>
+            <apex:column value="{!conObj.Phone}"/>
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+</apex:page>
